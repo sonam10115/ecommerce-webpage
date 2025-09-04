@@ -73,7 +73,7 @@ export const heroLogos = [
   },
 ];
 
-export const benefitimgs = [
+export const benefitItems = [
   {
     id: 1,
     icon: "/images/icon-1.png",
