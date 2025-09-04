@@ -6,10 +6,10 @@ const Hero = () => {
     <section>
       <div className="container">
         {/* content */}
-        <div className="">
+        <div className="mt-[50px] md:mt-20 text-center">
           {/* {title} */}
-          <div className="className">
-            <span className="">
+          <div className="relative max-w-max mx-auto pt-8 pl-8">
+            <span className="absolute top-0 left-0">
               <img
                 src="/images/shape-1.png"
                 alt="title shape"
@@ -17,7 +17,7 @@ const Hero = () => {
                 height={43}
               />
             </span>
-            <div className="">
+            <div className="flex items-center bg-white-95 rounded-lg p-3.5 justify-center gap-2.5 max-w-max mx-auto flex-wrap text-center ">
               <span>
                 <img
                   src="/images/shape-2.png"
@@ -26,22 +26,27 @@ const Hero = () => {
                   height={48}
                 />
               </span>
-              <h1>
-                <span className="">unlock</span> your creative potential
+              <h1 className="text-2xl md:text-4xl">
+                <span className="text-orange-50">unlock</span> your creative
+                potential
               </h1>
             </div>
           </div>
-          <p>with Online Design and Development Courses.</p>
+          <p className="text-2xl font-medium mt-4 md:text-[28px]">
+            with Online Design and Development Courses.
+          </p>
           <p>Learn from Industry Experts and Enhance Your Skills.</p>
 
           {/* buttons wrapper */}
-          <div className="">
-            <button>Explore Courses</button>
-            <button>View Pricing</button>
+          <div className="flex items-center justify-center gap-3 mt-12 flex-wrap">
+            <button className="primary-btn max-sm:[80%]">
+              Explore Courses
+            </button>
+            <button className="secondary-btn">View Pricing</button>
           </div>
 
           {/* client logo */}
-          <div className="">
+          <div className="mt-8 lg:mt-[100px] relative overflow-hidden">
             <div>
               {heroLogos.map((logo) => (
                 //logo
