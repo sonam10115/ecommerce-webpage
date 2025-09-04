@@ -1,4 +1,5 @@
 import React from "react";
+import { heroLogos } from "../constant/data";
 
 const Hero = () => {
   return (
@@ -10,7 +11,7 @@ const Hero = () => {
           <div className="className">
             <span className="">
               <img
-                src="/image/shape-1.png"
+                src="/images/shape-1.png"
                 alt="title shape"
                 width={39}
                 height={43}
@@ -19,7 +20,7 @@ const Hero = () => {
             <div className="">
               <span>
                 <img
-                  src="/image/shape-2.png"
+                  src="/images/shape-2.png"
                   alt="title shape"
                   width={48}
                   height={48}
@@ -32,8 +33,47 @@ const Hero = () => {
           </div>
           <p>with Online Design and Development Courses.</p>
           <p>Learn from Industry Experts and Enhance Your Skills.</p>
+
+          {/* buttons wrapper */}
+          <div className="">
+            <button>Explore Courses</button>
+            <button>View Pricing</button>
+          </div>
+
+          {/* client logo */}
+          <div className="">
+            <div>
+              {heroLogos.map((logo) => (
+                //logo
+                <div className="" key={logo.id}>
+                  <img
+                    src={logo.img}
+                    alt="logo"
+                    width={logo.width}
+                    height={28}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-        <figure></figure>
+        {/* Banner */}
+        <figure>
+          <img
+            src="/images/hero-banner.png"
+            alt="hero-banner"
+            width={940}
+            height={500}
+          />
+
+          {/* dark overlay */}
+          <div className=""></div>
+
+          {/* play button */}
+          <div className="">
+            <span></span>
+          </div>
+        </figure>
       </div>
     </section>
   );
