@@ -12,7 +12,7 @@ const Header = () => {
       <div className="container flex items-center justify-between border-b border-b-white-95 pb-5 ">
         {/* logo */}
         <a href="#">
-          <img src="/image/logo.png" alt="logo" width={170} height={50} />
+          <img src="/images/logo.png" alt="logo" width={170} height={50} />
         </a>
         {/* mobile menu */}
         <nav className={`navbar ${isopen ? "active" : ""}`}>
