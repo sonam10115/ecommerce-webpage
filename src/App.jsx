@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import Header from "./component/Header";
+import Hero from "./component/Hero";
 
 const App = () => {
   return (
-    <div>
-      app is waiting 
-    </div>
-  )
-}
+    <>
+      <Header />
+      <Hero />
+    </>
+  );
+};
 
-export default App
+export default App;
