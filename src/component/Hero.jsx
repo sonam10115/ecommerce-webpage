@@ -10,7 +10,7 @@ const Hero = () => {
           <div className="className">
             <span className="">
               <img
-                src="/images/shape-1.png"
+                src="/image/shape-1.png"
                 alt="title shape"
                 width={39}
                 height={43}
@@ -19,7 +19,7 @@ const Hero = () => {
             <div className="">
               <span>
                 <img
-                  src="/images/shape-2.png"
+                  src="/image/shape-2.png"
                   alt="title shape"
                   width={48}
                   height={48}
