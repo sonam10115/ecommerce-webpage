@@ -13,10 +13,10 @@ const Benifits = () => {
         link="view all"/>
 
         {/* card wrapper  */}
-        <div className="">
+        <div className='grid gap-5 md:grid-cols-2'>
             {benefitItems.map(item => (
                 // card
-                <div className=' '>
+                <div className=' bg-white p-10 flex flex-col rounded-xl '>
                     {/* // icon */}
                     <div className=''>
                         <img src={item.icon} alt={item.title} width={64} height={64}  />
