@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./component/Header";
 import Hero from "./component/Hero";
 import Benifits from "./component/Benifits";
+import Courses from "./component/Courses";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         <Hero />
       </main>
       <Benifits />
+      <Courses />
     </>
   );
 };
