@@ -7,8 +7,10 @@ const App = () => {
   return (
     <>
       <Header />
-      <Hero />
-      <Benifits/>
+      <main>
+        <Hero />
+      </main>
+      <Benifits />
     </>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { heroLogos } from "../constant/data";
 import Marquee from "react-fast-marquee";
+import { RiPlayFill } from "@remixicon/react";
 
 const Hero = () => {
   return (
@@ -65,20 +66,23 @@ const Hero = () => {
           </div>
         </div>
         {/* Banner */}
-        <figure>
+        <figure className="relative mt-10 md:mt-14 lg:mt-[50px] max-w-[920px] w-full h-[500px] mx-auto rounded-xl overflow-hidden">
           <img
             src="/images/hero-banner.png"
             alt="hero-banner"
             width={940}
             height={500}
+            className="w-full h-full object-cover"
           />
 
           {/* dark overlay */}
-          <div className=""></div>
+          <div className="absolute insert-0 bg-black/20 z-10"></div>
 
           {/* play button */}
-          <div className="">
-            <span></span>
+          <div className="absolute top-1/2 left-1/2 z-20 -translate-x-1/2 -translate-y-1/2  cursor-pointer">
+            <span className="flex bg-white w-16 h-16 items-center justify-center rounded-full play-btn ">
+              <RiPlayFill size={30} />
+            </span>
           </div>
         </figure>
       </div>

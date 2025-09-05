@@ -77,10 +77,10 @@
   }
 
   .play-btn {
-    animation: 2s pulseAni ease infinite;
+    animation: 2s pulseBtn ease infinite;
   }
 
-  @keyframes pulseAni {
+  @keyframes pulseBtn {
     0% {
       box-shadow: 0 0 0 white;
     }
