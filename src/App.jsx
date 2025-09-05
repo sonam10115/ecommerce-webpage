@@ -4,6 +4,8 @@ import Hero from "./component/Hero";
 import Benifits from "./component/Benifits";
 import Courses from "./component/Courses";
 import Testimonials from "./component/Testimonials";
+import FaqSec from "./component/FaqSec";
+
 
 const App = () => {
   return (
@@ -15,6 +17,7 @@ const App = () => {
       <Benifits />
       <Courses />
       <Testimonials />
+      <FaqSec/>
     </>
   );
 };
