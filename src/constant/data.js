@@ -112,7 +112,7 @@ export const benefitItems = [
   },
 ];
 
-export const coursesSecimgs = [
+export const coursesSecItems = [
   {
     id: 1,
     img: "/images/course-img-1.png",
@@ -163,7 +163,7 @@ export const coursesSecimgs = [
   },
 ];
 
-export const testimonialsimgs = [
+export const testimonialsItems = [
   {
     id: 1,
     text: "The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!",
