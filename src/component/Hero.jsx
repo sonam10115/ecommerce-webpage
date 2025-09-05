@@ -1,5 +1,6 @@
 import React from "react";
 import { heroLogos } from "../constant/data";
+import Marquee from "react-fast-marquee";
 
 const Hero = () => {
   return (
@@ -47,10 +48,10 @@ const Hero = () => {
 
           {/* client logo */}
           <div className="mt-8 lg:mt-[100px] relative overflow-hidden">
-            <div>
+            <Marquee pauseOnHover={true}>
               {heroLogos.map((logo) => (
                 //logo
-                <div className="" key={logo.id}>
+                <div className="px-14 py-5" key={logo.id}>
                   <img
                     src={logo.img}
                     alt="logo"
@@ -59,7 +60,8 @@ const Hero = () => {
                   />
                 </div>
               ))}
-            </div>
+            </Marquee>
+            <div className="absolute top-0 left-0 bg-gradient-to-1 from-white-97 via-white-97/80 to-transparent w-24 h-full z-10"></div>
           </div>
         </div>
         {/* Banner */}
