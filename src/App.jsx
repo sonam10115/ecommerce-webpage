@@ -4,6 +4,9 @@ import Hero from "./component/Hero";
 import Benifits from "./component/Benifits";
 import Courses from "./component/Courses";
 import Testimonials from "./component/Testimonials";
+import FaqSec from "./component/FaqSec";
+import Footer from "./component/Footer";
+
 
 const App = () => {
   return (
@@ -11,10 +14,14 @@ const App = () => {
       <Header />
       <main>
         <Hero />
-      </main>
-      <Benifits />
+         <Benifits />
       <Courses />
       <Testimonials />
+      <FaqSec/>
+      </main>
+      
+      <Footer /> 
+      
     </>
   );
 };
