@@ -4,6 +4,8 @@ import { testimonialsItems } from "../constant/data";
 import { RiArrowLeftLine, RiArrowRightLine } from "@remixicon/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css/navigation";
 
 const Testimonials = () => {
   return (
@@ -17,7 +19,21 @@ const Testimonials = () => {
         ></Title>
 
         {/* card  wrapper */}
-        <Swiper spaceBetween={30} className="mt-14 lg:mt-16">
+        <Swiper
+          modules={[Navigation, Autoplay]}
+          spacebetween={30}
+          breakpoints={{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 1.5 },
+            1280: { slidesPerView: 2.5 },
+          }}
+          loop={true}
+          navigation={{
+            nextEl: ".prev-btn",
+            prevEl: ".next-btn",
+          }}
+          className="m t-14 lg:mt-16"
+        >
           {testimonialsItems.map((item) => (
             // card
             <SwiperSlide
@@ -44,13 +60,14 @@ const Testimonials = () => {
         </Swiper>
 
         {/* navigation button */}
-        <div className=""></div>
-        <button className="">
-          <RiArrowLeftLine size={30} />
-        </button>
-        <button className="">
-          <RiArrowRightLine size={30} />
-        </button>
+        <div className="flex items-center justify-center mt-18 gap-5">
+          <button className="bg-orange-70 w-12 h-12 flex items-center justify-center rounded-xl hover:bg-orange-75 transition-colors active:bg-orange-75/80 prev-btn">
+            <RiArrowLeftLine size={30} />
+          </button>
+          <button className="bg-orange-70 w-12 h-12 flex items-center justify-center rounded-xl hover:bg-orange-75 transition-colors active:bg-orange-75/80 next-btn">
+            <RiArrowRightLine size={30} />
+          </button>
+        </div>
       </div>
     </section>
   );
