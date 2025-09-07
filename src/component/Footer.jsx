@@ -11,7 +11,8 @@ const Footer = () => {
                 <div className=''>
                     {/* footer logo  */}
                     <div className=''>
-                        <img src="/images/logo.png" alt="footer " />
+                        <img src="/images/logo.png" alt="footer " width={150 } height={50} />
+                        
                     </div>
                 </div>
 
@@ -23,7 +24,7 @@ const Footer = () => {
              {/* footer button  */}
              <p></p>
 
-        </div>
+        </div> 
     </footer>
     
     
