@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 // import motion
 import { motion } from "motion/react";
 import * as variants from "../motion/animation";
+import { delay } from "motion";
 
 const Testimonials = () => {
   return (
@@ -43,6 +44,12 @@ const Testimonials = () => {
               nextEl: ".prev-btn",
               prevEl: ".next-btn",
             }}
+            autoplay={   { 
+               delay : 3000,
+              pauseOnMouseEnter:true,
+              disableOnInteraction: false,}
+            }
+            
             className="m t-14 lg:mt-16"
           >
             {testimonialsItems.map((item) => (

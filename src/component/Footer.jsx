@@ -37,7 +37,7 @@ const Footer = () => {
                         <ul className='space-y-2.5'>
                             {item.links.map((link,index) =>(
                                 <li key={index}>
-                                    <a href="#">{link.label}</a>
+                                    <a href="#" className='flex hover:text-orange-50 transition-colors'>{link.label}</a>
                                 </li>
 
                             ))}
@@ -47,11 +47,11 @@ const Footer = () => {
 
                      
                 {/* social profile  */}
-                <div className=''>
-                    <p> social profiles </p>
-                    <div>
+                <div >
+                    <p className='text-lg font-semibold'> social profiles </p>
+                    <div className='flex mt-5 gap-3'>
                         {socialIcons.map(icon =>(
-                            <button className=''>
+                            <button className='secondary-btn p-3.5 bg-white-97 hover:bg-white-99 hover:shadow-md transition-all' >
                                 <a href="">{<icon.icon />}</a>
 
                             </button>
@@ -63,7 +63,7 @@ const Footer = () => {
 
             </div>
              {/* footer button  */}
-             <p> &copy; Skillbridge. All rights reserved.</p>
+             <p className='mt-16 text-center lg:mt-20'> &copy; Skillbridge. All rights reserved.</p>
 
         </div> 
     </footer>
